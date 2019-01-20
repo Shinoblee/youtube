@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Layouts</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            /* grid gap does both column and row */
+            grid-gap: 1em
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quaerat repudiandae dolor repellendus iusto quibusdam nihil, placeat modi, quasi odio libero harum quas atque ea! Sunt doloremque cum suscipit sed debitis commodi quibusdam culpa! A nihil quod eaque eligendi, rerum repudiandae autem ab earum odit inventore aliquam sint porro deserunt minima beatae, quis ex eveniet voluptas cum nostrum est, explicabo assumenda molestias numquam! Nam reprehenderit, nulla iure eos, omnis repellat doloribus qui, dicta et sunt aliquam? Iusto reprehenderit consequatur eveniet.
+        </div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quisquam quasi facere, totam dolorum id. Consequatur unde a voluptatum illum dicta, quo nemo aut praesentium corporis modi, suscipit in esse?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quaerat repudiandae dolor repellendus iusto quibusdam nihil, placeat modi, quasi odio libero harum quas atque ea! Sunt doloremque cum suscipit sed debitis commodi quibusdam culpa! A nihil quod eaque eligendi, rerum repudiandae autem ab earum odit inventore aliquam sint porro deserunt minima beatae, quis ex eveniet voluptas cum nostrum est, explicabo assumenda molestias numquam! Nam reprehenderit, nulla iure eos, omnis repellat doloribus qui, dicta et sunt aliquam? Iusto reprehenderit consequatur eveniet.
+        </div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quisquam quasi facere, totam dolorum id. Consequatur unde a voluptatum illum dicta, quo nemo aut praesentium corporis modi, suscipit in esse?
+        </div>
+    </div>
+</body>
+</html>
